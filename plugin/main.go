@@ -7,8 +7,8 @@ package main
 import (
 	"strings"
 
-	"practice/todocomment"
 	"golang.org/x/tools/go/analysis"
+	"practice/todocomment"
 )
 
 // flags for Analyzer.Flag.
@@ -33,4 +33,3 @@ func (analyzerPlugin) GetAnalyzers() []*analysis.Analyzer {
 		todocomment.Analyzer,
 	}
 }
-

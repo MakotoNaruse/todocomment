@@ -40,7 +40,7 @@ func run(pass *analysis.Pass) (interface{}, error) {
 			for _, comment := range n.Comments {
 				s := comment.Text()
 				if strings.Contains(s, "TODO") {
-					if !strings.Contains(s, issue){
+					if !strings.Contains(s, issue) {
 						pass.Reportf(comment.Pos(), "todo comment must contains issue's link")
 					}
 				}
@@ -50,4 +50,3 @@ func run(pass *analysis.Pass) (interface{}, error) {
 
 	return nil, nil
 }
-
