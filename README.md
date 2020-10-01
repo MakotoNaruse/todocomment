@@ -31,7 +31,7 @@ func f() {
 ## Install
 
 ```sh
-$ go get github.com/MakotoNaruse/complexfunc/cmd/todocomment
+$ go get github.com/MakotoNaruse/todocomment/cmd/todocomment
 ```
 
 ## Usage
