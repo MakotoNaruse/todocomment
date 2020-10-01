@@ -1,4 +1,4 @@
-module practice/todocomment
+module github.com/MakotoNaruse/todocomment
 
 go 1.14
 
