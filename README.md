@@ -1,5 +1,5 @@
 # todocomment
-[![Go Report Card](https://goreportcard.com/badge/github.com/MakotoNaruse/complexfunc)](https://goreportcard.com/report/github.com/MakotoNaruse/complexfunc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/MakotoNaruse/todocomment)](https://goreportcard.com/report/github.com/MakotoNaruse/todocomment)
 [![Go test](https://github.com/MakotoNaruse/todocomment/workflows/Go%20test/badge.svg)](https://github.com/MakotoNaruse/todocomment/actions)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
