@@ -7,8 +7,8 @@ package main
 import (
 	"strings"
 
+	"github.com/MakotoNaruse/todocomment"
 	"golang.org/x/tools/go/analysis"
-	"practice/todocomment"
 )
 
 // flags for Analyzer.Flag.

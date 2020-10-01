@@ -4,8 +4,8 @@ import (
 	"golang.org/x/tools/go/analysis/passes/findcall"
 	"testing"
 
+	"github.com/MakotoNaruse/todocomment"
 	"golang.org/x/tools/go/analysis/analysistest"
-	"practice/todocomment"
 )
 
 func init() {

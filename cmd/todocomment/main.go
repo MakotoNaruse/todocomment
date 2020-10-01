@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/MakotoNaruse/todocomment"
 	"golang.org/x/tools/go/analysis/unitchecker"
-	"practice/todocomment"
 )
 
 func main() { unitchecker.Main(todocomment.Analyzer) }
