@@ -31,13 +31,21 @@ func f() {
 ## Install
 
 ```sh
-$ go get github.com/MakotoNaruse/todocomment/cmd/todocomment
+% go get github.com/MakotoNaruse/todocomment/cmd/todocomment
 ```
 
 ## Usage
 
 ```sh
-$ go vet -vettool=`which todocomment` [flag] pkgname
+% go vet -vettool=`which todocomment` [flag] pkgname
 Flags:
-      -issue s must contain issue's link (ex. https://github.com/test/test/issues/)
+      --issue s must contain issue's link (ex. https://github.com/test/test/issues/)
 ```
+
+## Example
+```sh
+% go vet -vettool=$(which todocomment) --issue "github.com/MakotoNaruse/todocomment/issues" ./...
+% go vet -vettool=$(which todocomment) --issue "trello.com/b/aaaaa/" main.go
+% go vet -vettool=$(which todocomment) --issue "issue" ./src
+```
+
