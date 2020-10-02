@@ -6,26 +6,37 @@
 `todocomment` finds TODO comment which doesn't include link to issue
 
 ## example
-```go
+```
 package a
 
 func f() { 
     // TODO: hoge
 	
-    // TODO: https://github.com/test/test/issues/123
-    // 次回リリースまでに修正する
-
-    // コメント
+    // TODO: hoge 
+    // nolint: todocomment
 	
-    /* 
-        TODO: これからやること 
-        githubのリンクはこれから作るよ 
+    // TODO: comment
+    // https://github.com/test/test/issues/ 
+
+    // comment
+	
+    /* TODO github issue will be created */
+	
+    /*
+        TODO github issue will be created
+        nolint: todocomment
     */
 }
+
+// TODO is a stuct name
+// nolint: todocomment
+type TODO struct {
+}
+
 ```
 ```console
 ./a.go:4:2: todo comment must contains issue's link
-./a.go:11:2: todo comment must contains issue's link
+./a.go:14:2: todo comment must contains issue's link
 ```
 
 ## Install
