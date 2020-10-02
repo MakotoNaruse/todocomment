@@ -10,7 +10,7 @@
 package a
 
 func f() { 
-    // TODO: hoge
+    // TODO: hoge <- NG
 	
     // TODO: hoge 
     // nolint: todocomment
@@ -20,7 +20,7 @@ func f() {
 
     // comment
 	
-    /* TODO github issue will be created */
+    /* TODO github issue will be created */ <- NG
 	
     /*
         TODO github issue will be created
