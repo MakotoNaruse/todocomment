@@ -1,6 +1,7 @@
 package todocomment
 
 import (
+	"flag"
 	"go/ast"
 	"strings"
 
@@ -24,7 +25,7 @@ var Analyzer = &analysis.Analyzer{
 var issue string
 
 func init() {
-	Analyzer.Flags.StringVar(&issue, "issue", "https://github.com/test/test/issues/", "report TODO comment doesn't contains issue's string ex. https://github.com/test/test/issues/")
+	flag.StringVar(&issue, "issue", "", "report TODO comment doesn't contains issue's string ex. https://github.com/test/test/issues/")
 }
 
 func run(pass *analysis.Pass) (interface{}, error) {
