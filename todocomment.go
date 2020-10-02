@@ -40,7 +40,10 @@ func run(pass *analysis.Pass) (interface{}, error) {
 		case *ast.File:
 			for _, comment := range n.Comments {
 				s := comment.Text()
-				if strings.Contains(s, "TODO") {
+				if strings.Contains(s, "nolint: todocomment") {
+					continue
+				}
+				if strings.Contains(s, "TODO ") || strings.Contains(s, "TODO:") {
 					if !strings.Contains(s, issue) {
 						pass.Reportf(comment.Pos(), "todo comment must contains issue's link")
 					}
